@@ -1,0 +1,15 @@
+# Put your code here
+from pyspark.sql import SparkSession
+from pyspark.sql import Row
+
+spark=SparkSession.builder.appName('PassengerData').getOrCreate()
+passenger=Row("Name","age","source","destination")
+row1=passenger("David",22,"London","Paris")
+row2=passenger("Steve",22,"New York","Sydney")
+passengerList=[row1,row2]
+df=spark.createDataFrame(passengerList)
+# df.filter(df["Name"].like("%David%")).show()
+df.show()
+
+# Don't Remove this line 
+df.coalesce(1).write.parquet("PassengerData")

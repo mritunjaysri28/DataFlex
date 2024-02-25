@@ -21,6 +21,8 @@ DataFlexer/
 │       ├── test_data_loader.py # Unit tests for data loading functions
 │       └── test_data_processor.py # Unit tests for data processing functions
 │
+|__docs
+|
 ├── data/                       # Directory for input/output data
 │   ├── input/                  # Directory for input data files
 │   └── output/                 # Directory for output data files
