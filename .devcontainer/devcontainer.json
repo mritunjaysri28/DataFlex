@@ -12,6 +12,12 @@
 		},
 		"ghcr.io/devcontainers/features/java:1": {
 			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/beehive:1": {
+			"version": "latest"
+		},
+		"mongodb/mongodb-community-server:1": {
+			"version": "latest" 
 		}
 	},
 
